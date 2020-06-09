@@ -117,7 +117,6 @@ The lifeguard manning the front desk asks if you bought a ticket at the kiosk.
 (if: $kiosk is 1)[(set: $ticket to 1)
 (colour: yellow)[*QUEST*]:
 Show the life guard your [[ticket-&gt;Ticket Counter]],
-
 ]
 Go to the [[kiosk-&gt;Ticket Kiosk]] to buy one,
 Try to [[sneak in-&gt;Icechest]] anyway,
@@ -162,20 +161,18 @@ The kiosk has a number keypad
 	 &lt;/tr&gt;
 &lt;/table&gt;
 
-(if: $booch is 0)[It seems like kiosk is out of order, but the lifeguard at the front desk doesn&#39;t know and won&#39;t believe you. No choice but to go back to the [[Pool Entrance]].]
-(if: $booch is 1)[
-(colour: yellow)[*QUEST*]:
-Wonder what this is for...]</tw-passagedata><tw-passagedata pid="5" name="Icechest" tags="icechest" position="300,800" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;ICECHEST (&lt;a href=&quot;https://hangouts.google.com/call/b3tWo7XwTn7G3ygsKZMuACEE?no_rd&quot; target=&quot;new&quot;&gt;video chat&lt;/a&gt;)
+{(if: $booch is 0)[It seems like kiosk is out of order, but the lifeguard at the front desk doesn&#39;t know and won&#39;t believe you. No choice but to go back to the [[Pool Entrance]].]
+(if: $booch is 1)[(colour: yellow)[*QUEST*]:
+Wonder what this is for...]}</tw-passagedata><tw-passagedata pid="5" name="Icechest" tags="icechest" position="300,800" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;ICECHEST (&lt;a href=&quot;https://hangouts.google.com/call/b3tWo7XwTn7G3ygsKZMuACEE?no_rd&quot; target=&quot;new&quot;&gt;video chat&lt;/a&gt;)
 {(open-url: &quot;https://hangouts.google.com/call/b3tWo7XwTn7G3ygsKZMuACEE?no_rd&quot;)}
 Several picnic tables overlook the pool. There is an icechest filled with ice cold cans of snobby hipster beer, La Croix, and White Claw.
-{(if: $lifeguard is 1)
+(if: $lifeguard is 1)
 [
 
 (set: $booch to 1)
 (colour: yellow)[*QUEST*]:
 Deep down at the bottom of the icechest you find a bottled drink that is not like the others. [[Inspect it-&gt;Booch]].]
 
-}
 Enter the gender-neutral [[Locker Rooms]],
 Descend the stairs to the [[pool area-&gt;West Lawn]],
 Or return to the [[Pool Entrance]].
@@ -309,7 +306,7 @@ You realize you must face this enigma with perfect courage or it will utterly an
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/LEUlW9IDXOw&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/OnjWKA0JsJo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/54LQ_AO1gDI?autoplay=1&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
 Congratulations. You have discovered the *hidden place*. You now have the ability to tear windows into this dimension of reality whenever you feel like it.
 
@@ -321,7 +318,7 @@ You approach the figure and realize it&#39;s Icelandic musical mastermind Björk
 
 &quot;You cannot find this place; it will find you. You should go somewhere quiet to relax, take deep breaths, and clear your head, so you can help me navigate to the *hidden place*.
 
-&quot;Warmthness. Alsamanche.
+&quot;Warmthness.
 
 PS: Now that you&#39;ve met with me, if you revisit a place, the text there might have changed. If you wish to complete this quest, please be sure to check to see if the word &#39;(colour: yellow)[*QUEST*]&#39; has appeared somewhere.&quot;
 
