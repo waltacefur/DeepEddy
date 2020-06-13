@@ -66,6 +66,11 @@ tw-story[tags~="lockerrooms"] {
  background-size:cover;
 }
 
+tw-story[tags~="stall"] {
+ background-image:url("51P04E5ZwLL._AC_SL1000_.jpg");
+ background-size:cover;
+}
+
 tw-story[tags~="westlawn"] {
  background-image:url("https://c1.staticflickr.com/1/102/268130133_67c3f043ca_z.jpg?zz=1");
  background-size:cover;
@@ -92,7 +97,7 @@ tw-story[tags~="eilerspark"] {
 }
 
 tw-story[tags~="poolentrance"] {
- background-image:url("https://lh3.googleusercontent.com/proxy/OXWy3L5h-06HzfH6oeeF6IaLZt1ULWzmS10TGuuvo77jscgiMc-zv5QUS6mbymSK5Yt5mkMc_SEQffHdREgUSJel7xtQ73mUrNXYRaSoTxXDKM6L8ESpbg");
+ background-image:url("http://limbacher-godfrey.com/wp-content/uploads/2015/02/5-DE.jpg");
  background-size:cover;
 }
 
@@ -109,9 +114,19 @@ tw-story[tags~="toiletbowl"] {
 tw-story[tags~="yourcar"] {
  background-image:url("https://miro.medium.com/max/16512/1*cqIcsAJw8LKmnp6jx8O7vA.jpeg");
  background-size:cover;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Parking Lot" tags="parkinglot" position="300,400" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;PARKING LOT (&lt;a href=&quot;https://hangouts.google.com/call/K6qPDVWh_tvw3mbJZqphAAEE?no_rd&quot; target=&quot;new&quot;&gt;video chat&lt;/a&gt;)
-{(open-url: &quot;https://hangouts.google.com/call/K6qPDVWh_tvw3mbJZqphAAEE?no_rd&quot;)
-(set: $car to 1)}
+}
+
+<style>
+::-moz-selection { /* Code for Firefox */
+  background: black;
+}
+
+::selection {
+  background: black;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Parking Lot" tags="parkinglot" position="300,400" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;PARKING LOT (&lt;a href=&quot;https://hangouts.google.com/call/K6qPDVWh_tvw3mbJZqphAAEE?no_rd&quot; target=&quot;new&quot; style=&quot;color:green&quot;&gt;video chat&lt;/a&gt;)
+(live: 1s)[(open-url: &quot;https://hangouts.google.com/call/K6qPDVWh_tvw3mbJZqphAAEE?no_rd&quot;)
+(set: $car to 1)]
 The asphalt is hot on your bare feet.
 
 Enter the [[pool-&gt;Pool Entrance]],
@@ -137,11 +152,11 @@ Show the life guard your [[ticket-&gt;Ticket Counter]],
 Go to the [[kiosk-&gt;Ticket Kiosk]] to buy one,
 Try to [[sneak in-&gt;Icechest]] anyway,
 Or go back to the [[Parking Lot]].
-(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="3" name="Pool Burger" tags="poolburger" position="300,200" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;POOL BURGER  (&lt;a href=&quot;https://hangouts.google.com/call/Mao0UD4-Rv3EnvPa1LAvACEE?no_rd&quot; target=&quot;new&quot;&gt;video chat&lt;/a&gt;)
-{(open-url: &quot;https://hangouts.google.com/call/Mao0UD4-Rv3EnvPa1LAvACEE?no_rd&quot;)}
+(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="3" name="Pool Burger" tags="poolburger" position="300,200" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;POOL BURGER  (&lt;a href=&quot;https://hangouts.google.com/call/Mao0UD4-Rv3EnvPa1LAvACEE?no_rd&quot; target=&quot;new&quot; style=&quot;color:green&quot;&gt;video chat&lt;/a&gt;)
+(live: 1s)[(open-url: &quot;https://hangouts.google.com/call/Mao0UD4-Rv3EnvPa1LAvACEE?no_rd&quot;)]
 Surrounded by a shady patio, a burger stand awaits your order. They also have boozy tiki drinks and soft-serve ice cream.
 
-Since this is were we might eat cake and sing Happy Birthday at a &quot;normal&quot; birthday party, we&#39;d like to make shoutouts our buds who are also celebrating quarantine birthdays right now:
+Since this is were we might eat cake and sing Happy Birthday at a &quot;normal&quot; birthday party, we&#39;d like to shout out our buds who are also celebrating quarantine birthdays right now:
 
 Chuck Burton and Maddie Scanlan&#39;s birthday is TODAY.
 Additionally, Kevin Rodriguez&#39;s birthday is coming up soon.
@@ -185,8 +200,8 @@ The kiosk has a number keypad
 {(if: $booch is 0)[It seems like kiosk is out of order, but the lifeguard at the front desk doesn&#39;t know and won&#39;t believe you. No choice but to go back to the [[Pool Entrance]].]
 (if: $booch is 1)[(colour: yellow)[*QUEST*]:
 Wonder what this is for...]}
-(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="5" name="Icechest" tags="icechest" position="300,800" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;ICECHEST (&lt;a href=&quot;https://hangouts.google.com/call/b3tWo7XwTn7G3ygsKZMuACEE?no_rd&quot; target=&quot;new&quot;&gt;video chat&lt;/a&gt;)
-{(open-url: &quot;https://hangouts.google.com/call/b3tWo7XwTn7G3ygsKZMuACEE?no_rd&quot;)}
+(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="5" name="Icechest" tags="icechest" position="300,800" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;ICECHEST (&lt;a href=&quot;https://hangouts.google.com/call/b3tWo7XwTn7G3ygsKZMuACEE?no_rd&quot; target=&quot;new style=&quot;color:green&quot;&quot;&gt;video chat&lt;/a&gt;)
+(live: 1s)[(open-url: &quot;https://hangouts.google.com/call/b3tWo7XwTn7G3ygsKZMuACEE?no_rd&quot;)]
 Several picnic tables overlook the pool. There is an icechest filled with ice cold cans of snobby hipster beer, La Croix, and White Claw.
 (if: $lifeguard is 1)
 [
@@ -198,14 +213,14 @@ Deep down at the bottom of the icechest you find a bottled drink that is not lik
 Enter the gender-neutral [[Locker Rooms]],
 Descend the stairs to the [[pool area-&gt;West Lawn]],
 Or return to the [[Pool Entrance]].
-(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="6" name="Locker Rooms" tags="lockerrooms" position="300,1000" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;LOCKER ROOM (&lt;a href=&quot;https://hangouts.google.com/call/CsPtdvy3VowrfnU2cEOiACEE?no_rd&quot; target=&quot;new&quot;&gt;video chat&lt;/a&gt;)
-{(open-url: &quot;https://hangouts.google.com/call/CsPtdvy3VowrfnU2cEOiACEE?no_rd&quot;)}
-You see some older locals who clearly come here everyday. They look so chill. They probably won&#39;t mind if you light up a fat sliff in here.
+(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="6" name="Locker Rooms" tags="lockerrooms" position="300,1000" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;LOCKER ROOM (&lt;a href=&quot;https://hangouts.google.com/call/CsPtdvy3VowrfnU2cEOiACEE?no_rd&quot; target=&quot;new&quot; style=&quot;color:green&quot;&gt;video chat&lt;/a&gt;)
+(live: 1s)[(open-url: &quot;https://hangouts.google.com/call/CsPtdvy3VowrfnU2cEOiACEE?no_rd&quot;)}]
+You see some older locals who clearly come here everyday. They look so chill. They probably won&#39;t mind if you light up a fat spliff in here.
 
 Enter a [[stall-&gt;Stall]],
 Or [[exit-&gt;Icechest]] the locker room.
-(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="7" name="Stall" tags="" position="100,1000" size="100,100">STALL (&lt;a href=&quot;https://hangouts.google.com/call/CsPtdvy3VowrfnU2cEOiACEE?no_rd&quot; target=&quot;new&quot;&gt;video chat&lt;/a&gt;)
-(open-url: &quot;https://hangouts.google.com/call/CsPtdvy3VowrfnU2cEOiACEE?no_rd&quot;)
+(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="7" name="Stall" tags="stall" position="100,1000" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;STALL (&lt;a href=&quot;https://hangouts.google.com/call/CsPtdvy3VowrfnU2cEOiACEE?no_rd&quot; target=&quot;new&quot; style=&quot;color:green&quot;&gt;video chat&lt;/a&gt;)
+(live: 1s)[(open-url: &quot;https://hangouts.google.com/call/CsPtdvy3VowrfnU2cEOiACEE?no_rd&quot;)]
 
 There is no door. Everyone in the locker room can see you. You feel exposed.
 
@@ -234,14 +249,14 @@ The hubbub of the party is muted down here. Take a breath and relax.
 You take a big breath of pool water and immediately regret it. You cough a little, and, after a second, a strong force pulls you [[toward the waters surface-&gt;Water&#39;s Edge]].]}
 
 (if: $bjork is 0)[Return to the [[surface-&gt;Water]].]
-(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="10" name="Water" tags="water" position="500,1200" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;THE WATER (&lt;a href=&quot;https://hangouts.google.com/call/2tZ1k3pUCmm-XWfkP2bWAAEE?no_rd&quot; target=&quot;new&quot;&gt;video chat&lt;/a&gt;)
-{(open-url: &quot;https://hangouts.google.com/call/2tZ1k3pUCmm-XWfkP2bWAAEE?no_rd&quot;)}
+(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="10" name="Water" tags="water" position="500,1200" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;THE WATER (&lt;a href=&quot;https://hangouts.google.com/call/2tZ1k3pUCmm-XWfkP2bWAAEE?no_rd&quot; target=&quot;new&quot; style=&quot;color:green&quot;&gt;video chat&lt;/a&gt;)
+(live: 1s)[(open-url: &quot;https://hangouts.google.com/call/2tZ1k3pUCmm-XWfkP2bWAAEE?no_rd&quot;)]
 It feels so good to be in the water!! The cold, fresh water pours over your skin, perfectly complementing the heat of the sun.
 
 [[Submerge-&gt;Underwater]] yourself,
 Or get out at the [[West Lawn]] or the [[East Lawn]].
-(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="11" name="West Lawn" tags="westlawn" position="500,1000" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;WEST LAWN (&lt;a href=&quot;https://hangouts.google.com/call/4pUxROwXPI48HNZ2Th8dAAEE?no_rd&quot; target=&quot;new&quot;&gt;video chat&lt;/a&gt;)
-{(open-url: &quot;https://hangouts.google.com/call/4pUxROwXPI48HNZ2Th8dAAEE?no_rd&quot;)}
+(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="11" name="West Lawn" tags="westlawn" position="500,1000" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;WEST LAWN (&lt;a href=&quot;https://hangouts.google.com/call/4pUxROwXPI48HNZ2Th8dAAEE?no_rd&quot; target=&quot;new&quot; style=&quot;color:green&quot;&gt;video chat&lt;/a&gt;)
+(live: 1s)[(open-url: &quot;https://hangouts.google.com/call/4pUxROwXPI48HNZ2Th8dAAEE?no_rd&quot;)]
 Parents sunbathe as their children play in the grass. A group of teenagers are applying copious amounts of sunscreen.
 
 Someone has left their sketchbook in the grass! Under the front cover is a message that reads, &quot;Please collaborte. Add a small amount to this drawing so that others have space to contribute too.&quot; &lt;a href=&quot;https://aggie.io/h9s2b5jx0b&quot;&gt;Draw in the sketch book&lt;/a&gt;.
@@ -253,14 +268,14 @@ Or walk up to the [[Icechest]].
 
 You also see a hidden gate opens onto [[Eiler&#39;s Park]]. You&#39;re not really supposed to go out that way, but... the gate is still there, so...
 
-(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="12" name="East Lawn" tags="eastlawn" position="700,1000" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;EAST LAWN (&lt;a href=&quot;https://hangouts.google.com/call/tbNnpzcVWOC-LTP4cqNRACEE?no_rd&quot; target=&quot;new&quot;&gt;video chat&lt;/a&gt;)
-{(open-url: &quot;https://hangouts.google.com/call/tbNnpzcVWOC-LTP4cqNRACEE?no_rd&quot;)}
-Some older gentlemen sit in the lush grass playing a contemplative game of chess. Maybe someone around here will play a game with you?
+(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="12" name="East Lawn" tags="eastlawn" position="700,1200" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;EAST LAWN (&lt;a href=&quot;https://hangouts.google.com/call/tbNnpzcVWOC-LTP4cqNRACEE?no_rd&quot; target=&quot;new&quot; style=&quot;color:green&quot;&gt;video chat&lt;/a&gt;)
+(live: 1s)[(open-url: &quot;https://hangouts.google.com/call/tbNnpzcVWOC-LTP4cqNRACEE?no_rd&quot;)]
+An order couple sits in the lush grass playing a contemplative game of backgammon. Maybe someone around here will play a game with you?
 
 Cannonball into the [[Water]],
 Or walk around to the [[West Lawn]].
-(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="13" name="Eiler&#39;s Park" tags="eilerspark" position="700,700" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;EILER&#39;S PARK (&lt;a href=&quot;https://hangouts.google.com/call/NV5XBwfIV56QEkxd38_CAAEE?no_rd&quot; target=&quot;new&quot;&gt;video chat&lt;/a&gt;)
-{(open-url: &quot;https://hangouts.google.com/call/NV5XBwfIV56QEkxd38_CAAEE?no_rd&quot;)}
+(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="13" name="Eiler&#39;s Park" tags="eilerspark" position="700,700" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;EILER&#39;S PARK (&lt;a href=&quot;https://hangouts.google.com/call/NV5XBwfIV56QEkxd38_CAAEE?no_rd&quot; target=&quot;new&quot; style=&quot;color:green&quot;&gt;video chat&lt;/a&gt;)
+(live: 1s)[(open-url: &quot;https://hangouts.google.com/call/NV5XBwfIV56QEkxd38_CAAEE?no_rd&quot;)]
 One bad part about Deep Eddy is that, as the oldest public pool in Austin, it is not very wheelchair accessible. Eiler&#39;s Park, however, features a very long and beautiful ramp descending past benches and a playscape.
 
 Obscured by bushes, you see a humanoid figure that sort of resembles a swan. [[Approach them-&gt;Bushes]].
@@ -309,8 +324,8 @@ Until next year, here&#39;s a video of some eggs:
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/V3Um7TJWsoI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
 You drive off feeling satisfied. You can go home now. Wait. You&#39;re already home! Isn&#39;t that weird?]
-(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="16" name="Deep Eddy Caberet" tags="caberet" position="500,200" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;DEEP EDDY CABERET (&lt;a href=&quot;https://hangouts.google.com/call/acDlRKMlWcJnSGNLw4ldAAEE?no_rd&quot; target=&quot;new&quot;&gt;video chat&lt;/a&gt;)
-{(open-url: &quot;https://hangouts.google.com/call/acDlRKMlWcJnSGNLw4ldAAEE?no_rd&quot;)}
+(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="16" name="Deep Eddy Caberet" tags="caberet" position="500,200" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;DEEP EDDY CABERET (&lt;a href=&quot;https://hangouts.google.com/call/acDlRKMlWcJnSGNLw4ldAAEE?no_rd&quot; target=&quot;new&quot; style=&quot;color:green&quot;&gt;video chat&lt;/a&gt;)
+(live: 1s)[(open-url: &quot;https://hangouts.google.com/call/acDlRKMlWcJnSGNLw4ldAAEE?no_rd&quot;)]
 One of the oldest dive bars in Austin. The bartender David can fix you up with a Lone Star and a shot of whiskey.
 
 {(if: $ticket is 0)[Or, he says, he can fix you something extra special, but he doesn&#39;t have the right ingredients at the moment.]
@@ -322,7 +337,7 @@ Ask for the [[special drink-&gt;David]].]
 
 Go downstairs to [[Pool Burger]],
 Or return to the [[Parking Lot]].
-&lt;/span&gt;</tw-passagedata><tw-passagedata pid="17" name="Hidden Place" tags="hiddenplace" position="700,200" size="100,100">THE HIDDEN PLACE (&lt;a href=&quot;https://hangouts.google.com/call/fDos8ZPIJNUz5CL57Yu6AAEE?no_rd&quot; target=&quot;new&quot;&gt;video chat&lt;/a&gt;)
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="17" name="Hidden Place" tags="hiddenplace" position="700,200" size="100,100">THE HIDDEN PLACE (&lt;a href=&quot;https://hangouts.google.com/call/fDos8ZPIJNUz5CL57Yu6AAEE?no_rd&quot; target=&quot;new&quot; style=&quot;color:green&quot;&gt;video chat&lt;/a&gt;)
 (set: $hiddenplace to 1)
 The curtains part, and a room opens before you. But wait, this is where the bar should be... You must have walked through a tear in reality.
 
@@ -340,7 +355,7 @@ You realize you must face this enigma with perfect courage or it will utterly an
 
 (Note, there *is* a video chat in this room. Go to the top of the page and click the link to see if anyone is in here already.)
 
-Tear a window back to the [[Deep Eddy Caberet]].</tw-passagedata><tw-passagedata pid="18" name="Bushes" tags="bushes" position="700,400" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;(if: $hiddenplace is 0)[BEGINNING OF (colour: yellow)[*QUEST*]
+Tear a window back to the [[Deep Eddy Caberet]].</tw-passagedata><tw-passagedata pid="18" name="Bushes" tags="bushes" position="700,500" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;(if: $hiddenplace is 0)[BEGINNING OF (colour: yellow)[*QUEST*]
 (set: $bjork to 1)
 You approach the figure and realize it&#39;s Icelandic musical mastermind Björk. She says,
 
@@ -352,7 +367,7 @@ You approach the figure and realize it&#39;s Icelandic musical mastermind Björk
 
 PS: Now that you&#39;ve met with me, if you revisit a place, the text there might have changed. If you wish to complete this quest, please be sure to check to see if the word &#39;(colour: yellow)[*QUEST*]&#39; has appeared somewhere.&quot;
 
-She hands you a waterproof flashlight, just in case. You feel compelled to help Icelandic pop sensation Björk because she gives you emotional respect.](if: $hiddenplace is 1)[BJÖRK
+You feel compelled to help Icelandic pop sensation Björk because she gives you emotional respect.](if: $hiddenplace is 1)[BJÖRK
 
 &quot;Thank you for helping me find the hidden place! I wrote this song about the tremendous favor you did for me.&quot;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/54LQ_AO1gDI?autoplay=1&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;]
@@ -366,7 +381,8 @@ A very good looking lifeguard hoists you out of the water. You say you are alrig
 
 Why wouldn&#39;t you take advice from such a hunk?
 
-Walk to the [[West Lawn]].</tw-passagedata><tw-passagedata pid="20" name="David" tags="david" position="500,400" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;David Lynch mixes a couple things with the (text-style: &quot;rumble&quot;)[oil]-like substance. He sprinkles what looks like fine crystals into it. He puts a miniature umbrella on top, and then right before he slides it over to you, he strikes a match and lights the umbrella on fire.
+Walk to the [[West Lawn]].
+(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata><tw-passagedata pid="20" name="David" tags="david" position="500,400" size="100,100">&lt;span style=&quot;background-color:#000000&quot;&gt;David Lynch mixes a couple things with the (text-style: &quot;rumble&quot;)[oil]-like substance. He sprinkles what looks like fine crystals into it. He puts a miniature umbrella on top, and then right before he slides it over to you, he strikes a match and lights the umbrella on fire.
 
 The umbrella burns quickly, and ignites the whole glassful of liquid. David Lynch picks up the glass, and pours the flaming substance out over the bar.
 
@@ -379,7 +395,7 @@ Bringo! You have discovered one of Ace&#39;s and Tess&#39;s absolute favorite dr
 
 You close your eyes, and see psychedelic rainbows and shit, man. A kaleidescope of tea kettles begin to talk to you.
 
-They say &quot;Without opening your eyes, shine your flashlight below.&quot;
+They say &quot;Without opening your eyes, gaze deep into the booch. Select the space around it with your mind.&quot;
 
 
 
@@ -493,13 +509,7 @@ The lifeguard checks your ticket. Everything seems to be in order.
 &quot;What are you doing with that? You shouldn&#39;t have that. Take it back to David immediately.&quot;
 
 Enter the [[pool-&gt;Icechest]],
-Or exit to the [[Parking Lot]].</tw-passagedata><tw-passagedata pid="36" name="Pictures" tags="pictures" position="100,1400" size="100,100">When Ace was in his single-digit-years, he used to have his birthday here at Deep Eddy Pool every year. Back then, there was a pizzeria called Mangia Pizza that served the same purpose that Pool Burger does now (except without the tiki drinks). Circa age 7:
-&lt;img src=&quot;https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/2433_1100422385025_1446_n.jpg?_nc_cat=102&amp;_nc_sid=e007fa&amp;_nc_ohc=HVhHzRGp104AX9BK35N&amp;_nc_ht=scontent-dfw5-2.xx&amp;oh=d4370f908ad41c56de531d23c376d168&amp;oe=5F04916D&quot;&gt;
-
-Tess didn&#39;t grow up in Austin, and thus couldn&#39;t have Deep Eddy birthday parties, but here&#39;s a photo of her:
-
-
-(if: $hiddenplace is 1)[[[Rip a hole in timespace-&gt;Hidden Place]].]</tw-passagedata></tw-storydata>
+Or exit to the [[Parking Lot]].</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
